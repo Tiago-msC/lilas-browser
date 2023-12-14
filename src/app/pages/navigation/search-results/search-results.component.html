@@ -1,0 +1,36 @@
+<div class="flex flex-col min-h-screen">
+  <app-navigation-bar></app-navigation-bar>
+
+  <div class="flex-1 flex flex-col bg-primary xbg-green-400">
+
+    <div class="w-full xbg-red-300 py-2 px-4 flex flex-col items-center border-b border-tertiary">
+      <!-- Input de Pesquisa -->
+      <div class="flex w-full flex-col md:flex-row max-w-[85rem] xbg-blue-200 items-center mt-5 mb-5">
+
+        <div class="md:mb-0 mb-8 md:mr-12 p-2 rounded-full hover:bg-secondary cursor-pointer text-tertiary" (click)="homeNavigate()" title="Início">
+          <svg width="35" height="35" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_218_55)">
+              <path d="M14.3303 2.91201C13.9499 2.61614 13.4818 2.45551 13 2.45551C12.5181 2.45551 12.05 2.61614 11.6696 2.91201L2.58695 9.97534C1.77228 10.6113 2.22078 11.9167 3.2532 11.9167H4.33328V20.5833C4.33328 21.158 4.56156 21.7091 4.96788 22.1154C5.37421 22.5217 5.92531 22.75 6.49995 22.75H10.8333V16.25C10.8333 15.6754 11.0616 15.1243 11.4679 14.7179C11.8742 14.3116 12.4253 14.0833 13 14.0833C13.5746 14.0833 14.1257 14.3116 14.532 14.7179C14.9383 15.1243 15.1666 15.6754 15.1666 16.25V22.75H19.4999C20.0746 22.75 20.6257 22.5217 21.032 22.1154C21.4383 21.7091 21.6666 21.158 21.6666 20.5833V11.9167H22.7467C23.778 11.9167 24.2287 10.6113 23.4129 9.97643L14.3303 2.91201Z" fill="currentColor" />
+            </g>
+          </svg>
+        </div>
+
+        <app-input-search class="w-full md:w-[35rem]"></app-input-search>
+      </div>
+    </div>
+
+    <div class="py-2 px-4 flex mt-4 flex-col items-center xbg-gray-200">
+      
+      <div class="max-w-[73rem] w-full xbg-red-400">
+        <div *ngFor="let item of [1,2,3]" class="w-full max-w-4xl px-2 mb-6">
+
+          <h3 class="text-[1.2rem] cursor-pointer"><a class="hover:underline font-medium text-tertiary hover:text-secondary-hover">Image Creator from Microsoft Designer</a></h3>
+          <span class="block text-[#777]">www.google.com.br</span>
+          <p>Lorem ipsuim</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
